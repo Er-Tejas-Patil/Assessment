@@ -14,7 +14,7 @@ describe('Calculator functionalities', () => {
     fireEvent.change(input2, { target: { value: '3' } });
     fireEvent.click(addButton);
 
-    expect(result.textContent).toBe('8');
+    expect(result.value).toBe('8');
   });
 
   test('Subtraction of two numbers', () => {
@@ -29,7 +29,7 @@ describe('Calculator functionalities', () => {
     fireEvent.change(input2, { target: { value: '3' } });
     fireEvent.click(subtractButton);
 
-    expect(result.textContent).toBe('2');
+    expect(result.value).toBe('2');
   });
 
   test('Multiplication of two numbers', () => {
@@ -44,6 +44,6 @@ describe('Calculator functionalities', () => {
     fireEvent.change(input2, { target: { value: '3' } });
     fireEvent.click(multiplyButton);
 
-    expect(result.textContent).toBe('15');
+    expect(result.value).toBe('15');
   });
 });
