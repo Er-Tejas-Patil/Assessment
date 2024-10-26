@@ -5,7 +5,7 @@ const Calculator = () => {
   const [result, setResult] = useState();
   const [firstInput, setFirstInput] = useState(null);
   const [secondInput, setSecondInput] = useState(null);
-  const [operator, setOperator] = useState('');
+  const [operator, setOperator] = useState('+');
 
   const handleInput = (e) => {
     if (e.target.id === 'input1') {
@@ -70,9 +70,9 @@ const Calculator = () => {
           />
         </div>
         <div>
-          <button onClick={handleAddition}>+</button>
-          <button onClick={handleSubstraction}>-</button>
-          <button onClick={handleMultiplication}>*</button>
+          <button onClick={handleAddition}> <b>+</b></button>
+          <button onClick={handleSubstraction}><b>-</b></button>
+          <button onClick={handleMultiplication}><b>*</b></button>
         </div>
       </div>
     </div>

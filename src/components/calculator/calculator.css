@@ -10,6 +10,7 @@
 .container {
   background-color: rgb(231, 231, 231);
   padding: 2rem 1rem;
+  border: 2px solid rgb(54, 218, 255);
 }
 
 .input-container {
@@ -21,13 +22,19 @@ input {
   border-radius: 5px;
   margin: 4px;
   padding: 4px 8px;
+  width: 200px;
+  height: 30px;
+  border: none;
 }
 
 button {
-  margin: 4px;
-  padding: 4px 18px;
+  margin: 14px 8px 10px 8px;
+  padding: 8px 26px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(145, 235, 255);
   &&:hover {
-    background-color: rgb(190, 255, 233);
+    background-color:  rgb(63, 220, 255);
   }
 }
 
