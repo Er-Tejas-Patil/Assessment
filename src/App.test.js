@@ -7,7 +7,7 @@ describe('Calculator functionalities', () => {
     
     const input1 = screen.getByTestId('input1');
     const input2 = screen.getByTestId('input2');
-    const addButton = screen.getByText('+');
+    const addButton = screen.getByTestId('add');
     const result = screen.getByTestId('result');
 
     fireEvent.change(input1, { target: { value: '5' } });
